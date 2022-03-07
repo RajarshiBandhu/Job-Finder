@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <title>Job Finder</title>
+    <body style="background-color:black">
+        <style>
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                background-color:gray;
+            }
+        </style>
+        <body>
+            <h3 style="background-color: gray;">Filters</h3>
+            <div class="buttons"> 
+                <form action="/hourly-wages/">
+                    <p><input type="submit" value="Hourly Wages"></p>
+                </form>
+                <form action="/yearly-wages/">
+                    <p><input type="submit" value="Yearly Wages"></p>
+                </form>
+                <form action="/find-age/">
+                    <p><input type="text" name="age" placeholder="age" required></p>
+                    <p><input type="submit" value="Find By Age"></p>
+                </form>
+                <form action="/filter-salary-hour/">
+                    <p><input type="text" name="salary" placeholder="minimum salary no comma" required></p>
+                    <p><input type="submit" value="Filter By Salary Hourly"></p>
+                </form>
+                <form action="/filter-salary-year/">
+                    <p><input type="text" name="salary" placeholder="minimum salary no comma" required></p>
+                    <p><input type="submit" value="Filter By Salary Yearly"></p>
+                </form>
+                <form action="/filter-company/">
+                    <p><input type="text" name="company" placeholder="company name"></p>
+                    <p><input type="submit" value="Filter by company"></p>
+                </form>
+            </div>
+            <br style="background-color: gray;">
+            <div class="buttons">
+                <form action="/">
+                    <p><input type="submit" value="Back To Search"></p>
+                </form>
+                <form action="/all-jobs/">
+                    <p><input type="submit" value="All Jobs"></p>
+                </form>
+            </div>
+        <table border=”1 | 0” style="background-color: lightgray;">
+            <tr>
+                <th>website</th>
+                <th>job name</th>
+                <th>salary</th>
+                <th>description</th>
+            </tr>
+            {% for job in all_data %}
+            <tr>
+                <td>{{job[0]}}</td>
+                <td>{{job[1]}}</td>
+                <td>{{job[2]}}</td>
+                <td>{{job[3]}}</tr>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
