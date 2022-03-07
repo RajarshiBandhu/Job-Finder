@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html style="background-color:gray;">
+    <style>
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start
+        }
+        div{
+            display: inline-block;
+        }
+        h1{
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+    <title>Job Finder</title>
+    <head>
+        <h1>Job Finder</h1>
+        <h4>Search For Jobs</h4>
+    </head>
+    <body>
+        <div class="buttons">
+            <form action="/search-job/">
+                <p><input type="text" name="job" placeholder="job/keyword" required/></p>
+                <p><input type="text" name="zipcode" placeholder="zipcode" required/></p>
+                <p><input type="text" name="pages" placeholder="Num of pages scraped" required/></p>
+                <p><input type="submit" value="Search for jobs"/></p>
+            </form> 
+        </div>
+    </body>
+</html>
