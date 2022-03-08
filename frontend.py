@@ -25,7 +25,7 @@ def search_job():
 def searchcompany():
     company=request.args.get("company")
     return render_template("jobs.html", all_data=get_by_company(company))
-    
+
 @app.route("/hourly-wages/")
 def hourly_wage():
     return render_template("jobs.html", all_data=hourly_or_yearly())
@@ -53,6 +53,10 @@ def findsalaryyear():
     salary = int(request.args.get("salary"))
     return render_template("jobs.html", all_data=find_salary(salary, False))
 
+@app.route("/help/")
+def helppage():
+    return render_template("help.html")
+    
 if __name__=="__main__":
     app.run()
     
