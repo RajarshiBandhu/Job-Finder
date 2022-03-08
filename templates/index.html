@@ -1,34 +1,23 @@
 <!DOCTYPE html>
-<html style="background-color:gray;">
-    <style>
-        .buttons{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start
-        }
-        div{
-            display: inline-block;
-        }
-        h1{
-            text-align: center;
-        }
-        h4{
-            text-align: center;
-        }
-    </style>
-    <title>Job Finder</title>
-    <head>
-        <h1>Job Finder</h1>
-        <h4>Search For Jobs</h4>
-    </head>
+<html>
+    <h1 style="text-align:center">Help</h1>
+    <form action="/">
+        <p><input type="submit" value="Back To Search"></p>
+    </form>
     <body>
-        <div class="buttons">
-            <form action="/search-job/">
-                <p><input type="text" name="job" placeholder="job/keyword" required/></p>
-                <p><input type="text" name="zipcode" placeholder="zipcode" required/></p>
-                <p><input type="text" name="pages" placeholder="Num of pages scraped" required/></p>
-                <p><input type="submit" value="Search for jobs"/></p>
-            </form> 
-        </div>
+        <h3 style="text-align:center"><b>Search For Jobs</b></h3>
+        <p style="text-align:center">Type in a job or keyword you want to look for, then type your zipcode, then type the number of pages you want to get data from</p>
+        <h3 style="text-align:center"><b>Hourly Wages</b></h3>
+        <p style="text-align:center">Clicking this button will only how you the jobs that have a salary with a hourly wage</p>
+        <h3 style="text-align:center"><b>Yearly Wages</b></h3>
+        <p style="text-align:center">Clicking this button will only how you the jobs that have a salary with a yearly wage</p>
+        <h3 style="text-align:center"><b>Find By Age</b></h3>
+        <p style="text-align:center">In the text box above the button, type in a age that you want it to be restricted to. For example if you want it to be 16 years or older type in 16. Then click the button</p>
+        <h3 style="text-align:center"><b>Find Salary By Hourly</b></h3>
+        <p style="text-align:center">Type in a minimum salary you want in the box above. This will give you salaries that are paid by the hour that are higher than the number you put in.</p>
+        <h3 style="text-align:center"><b>Find Salary By Yearly</b></h3>
+        <p style="text-align:center">Type in a minimum salary you want in the box above. This will give you salaries that are paid yearly that are higher than the number you put in.</p>
+        <h3 style="text-align:center"><b>Filter By Company</b></h3>
+        <p style="text-align:center">Type in a company, and the jobs by that company will be shown. </p>
     </body>
 </html>
