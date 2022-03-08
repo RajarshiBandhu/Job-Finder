@@ -14,4 +14,5 @@ The language is python
 run frontend.py for website
 Make sure you create a folder called templates, and within those folders the html files. The templates folder is in same directory as frontend.py and backend.py
 
+There is a help button for help with buttons
 *There are some functions in backend.py which can make the data go to a SQL database instead of going to a list. 
