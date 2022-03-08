@@ -77,7 +77,10 @@ def find_job_simplyhired(zip_code, job, page_num):
             new_job.append(job.find("p", {"class":"jobposting-snippet"}).text)
             new_job.append(job.find("span"))
             list_of_jobs.append(new_job)
-        link = soup.find("a", {"class":"Pagination-link"})['href']
+        try:
+            link = soup.find("a", {"class":"Pagination-link"})['href']
+        except TypeError:
+            return list_of_jobs
         r = requests.get(f"https://www.simplyhired.com{link}")
         if r is None:
             return list_of_jobs
