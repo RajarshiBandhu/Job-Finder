@@ -1,6 +1,9 @@
 # Job-Finder
-This website will scrape data from 2 different job search websites.
-You can search for any job/keyword by zipcode, and control how many pages are scraped
+# This website will scrape data from 2 different job search websites. (H1)
+
+
+
+
 
 Then you can filter out the data to get what you want,
 You can filter by minimum salary,
