@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .container{
+            height: 100vh; 
+            width: 100;
+            /* Created with https://www.css-gradient.com */
+            background: #FFFFFF;
+            background: #9aaeb6;
+            background-position: center;
+            background-size:cover;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .navbar{
+
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin:0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: #000000;
+            font-size: 30px;
+
+        }
+        #logo{
+            width:100px;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="navbar" style="background:#86c8da">
+                <h1>Job Finder</h1>>
+                <ul>
+                    <li><form action="/help/">
+                        <p><input type="submit" value="help"></p>
+                    </form></li>
+                </ul>
+            </div>
+            <form action="/search-job/">
+                <p><input type="text" name="job" placeholder="job/keyword" required/></p>
+                <p><input type="text" name="zipcode" placeholder="zipcode" required/></p>
+                <p><input type="text" name="pages" placeholder="Num of pages scraped" required/></p>
+                <p><input type="submit" value="Search for jobs"/></p>
+            </form> 
+        </div>
+    </body>
+</html>
