@@ -1,6 +1,9 @@
-# Job-Finder
-# This website will scrape data from 2 different job search websites. (H1)
-
+# What It Does
+This website will scrape data from 2 different job search websites
+# Sample (h3)
+![Alt text](http://full/path/to/img.jpg "Optional title")
+# Technologies (h4)
+Flask-
 
 
 
