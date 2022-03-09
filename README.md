@@ -1,8 +1,8 @@
 # What It Does
 This website will scrape data from 2 different job search websites
-# Sample (h3)
-![Alt text](http://full/path/to/img.jpg "Optional title")
-# Technologies (h4)
+# Sample 
+![Alt text](https://user-images.githubusercontent.com/97370250/157504099-6ce49675-f7f9-421c-8c63-e35a6267c6e5.png)
+# Technologies 
 Flask-
 
 
