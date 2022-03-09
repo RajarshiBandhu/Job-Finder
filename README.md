@@ -8,6 +8,8 @@ This website will scrape data from 2 different job search websites
 # Technologies 
 Flask V 2.0.3, Python V 3.10, Beautiful Soup V Beautiful Soup 4
 
+# How To Use
+Download the folder called job finder, then double tap on the file called 'frontend.py'. The command line will open up, and it will say it is running on a server, paste that server into your search engine and you can run it. 
 # Details
 Given a job name/keyword, zip code, and the number of webpages you want to scrape per site, this website will return a table with jobs, specificly the website, the job name, the salary, and a snippet about the job. 
 There are also filters in the website, You can filter by minimum salary, you can filter by company name, you can filter by age required, you can filter by hourly/yearly wages.
