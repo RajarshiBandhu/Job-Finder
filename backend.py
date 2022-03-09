@@ -111,10 +111,17 @@ def find_job_theladders(job,zipcode, pages):
         c = r.content
         soup = BeautifulSoup(c, "html.parser")
         all_jobs = soup.findAll("div", {"class":"job-card-container-with-labels"})
+        if all_jobs is None:
+            return job_list
+        print(type(all_jobs))
         for job in all_jobs:
+            print(type(job))
             cur_job = []
             cur_job.append(job.find("a", {"class":"job-card-title"}).text)
-            cur_job.append(job.find("div", {"class":"job-card-salary-label"}).text)
+            if job.find("div", {"class":"job-card-salary-label"}) is None:
+                cur_job.append("NA")
+            else:
+                cur_job.append(job.find("div", {"class":"job-card-salary-label"}).text)
             cur_job.append(job.find("p", {"class":"job-card-description"}).text)
             job_list.append(cur_job)
         page = page + 1
