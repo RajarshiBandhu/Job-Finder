@@ -2,6 +2,7 @@
 This website will scrape data from 2 different job search websites
 # Sample 
 ![Alt text](https://user-images.githubusercontent.com/97370250/157504099-6ce49675-f7f9-421c-8c63-e35a6267c6e5.png)
+![Alt text](https://user-images.githubusercontent.com/97370250/157504281-8b1253e9-4830-4d5b-bba8-254df8196a3c.png)
 # Technologies 
 Flask-
 
